@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <title>Gen</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="gen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+</head>
+
+<body>
+    <div id=menu>
+        <button id="generate">Generate World</button>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="stats">Entity Stats</button>
+        <button id="families">Families</button>
+        <button id="settingsBtn">Settings</button>
+        <div id="infos">
+            <p id="round"></p>
+            <p id="alive"></p>
+            <p id="food"></p>
+            <p id="born"></p>
+            <p id="died"></p>
+        </div>
+    </div>
+    <canvas id="canvas" width="500" height="500" style=" border:1px solid black"></canvas>
+
+    <div id="entView"></div>
+    <div id="detailView">
+        <p id="detail"></p>
+        <button id="detailOK">OK</button>
+    </div>
+    <div id="settingView">
+        <div>
+            <label for="foodAmount">Food Amount:</label>
+            <input type="number" id="foodAmount" name="foodAmount" value="" />
+        </div>
+        <div>
+            <label for="fieldSize">Field Size:</label>
+            <input type="number" id="fieldSize" name="fieldSize" value="" />
+        </div>
+        <div>
+            <label for="startEntities">Entities at Start:</label>
+            <input type="number" id="startEntities" name="startEntities" value="" />
+        </div>
+        <div>
+            <label for="GameSpeed">Game Speed (in ms):</label>
+            <input type="number" id="GameSpeed" name="GameSpeed" value="" />
+        </div>
+
+        <button id="settingOK">OK</button>
+    </div>
+
+    <script src="gen.js"></script>
+    <script src="entity.js"></script>
+    <script src="settings.js"></script>
+    <script src="world.js"></script>
+    <script src="listener.js"></script>
+</body>
+
+</html>
